@@ -1,0 +1,25 @@
+create database editonline
+
+create table edituser(
+	id int(11) auto_increment primary key not null,
+	username varchar(255) not null,
+	password varchar(200) not null,
+	grade int(2) default 1,
+	lasttime datetime default null,
+	lastip varchar(200) default null	
+)ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+create table editlog(
+	id int(11) auto_increment primary key not null,
+	uid int(11) default null,
+	pcate int(1) default 1,
+	path varchar(255) default null,
+	log longtext,
+	opentime datetime default null,
+	closetime datetime default null,
+	isopen int(1) default 0, 
+)ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+test----
+123
+fdsafdsafds
